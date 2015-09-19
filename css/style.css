@@ -1,6 +1,9 @@
 body{
 	font-family: 'Roboto', sans-serif;
 }
+.text-center{
+	text-align:center;
+}
 .top-section {
 	background-color: #fcf8f6;
     background-image:  url('/images/top-bg.jpg');
@@ -89,7 +92,7 @@ body{
     padding-top: 15px;
 }
 .phone-number{
-	font-size:1.35em;
+	font-size:1.3em;
 	font-weight:700;
 	color:#000;
 }
@@ -106,7 +109,8 @@ body{
 	background:-moz-linear-gradient( center top, #0190a6 5%, #13c4db 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0190a6', endColorstr='#13c4db');
 	background-color:#0190a6;
-}.callback-btn:active {
+}
+.callback-btn:active {
 	position:relative;
 	top:1px;
 }
@@ -119,9 +123,46 @@ body{
     content: "";
     display: block;
 }
-#show-menu {
-    margin-top: 7px;
+
+#show-menu{
+    margin-top: 5px;
 	display:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #13c4db), color-stop(1, #0190a6) );
+	background:-moz-linear-gradient( center top, #13c4db 5%, #0190a6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#13c4db', endColorstr='#0190a6');
+	background-color:#13c4db;
+	-webkit-border-top-left-radius:27px;
+	-moz-border-radius-topleft:27px;
+	border-top-left-radius:27px;
+	-webkit-border-top-right-radius:27px;
+	-moz-border-radius-topright:27px;
+	border-top-right-radius:27px;
+	-webkit-border-bottom-right-radius:27px;
+	-moz-border-radius-bottomright:27px;
+	border-bottom-right-radius:27px;
+	-webkit-border-bottom-left-radius:27px;
+	-moz-border-radius-bottomleft:27px;
+	border-bottom-left-radius:27px;
+	text-indent:0;
+	border:1px solid #8fb4d9;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:normal;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+	padding-left:15px;
+	padding-right:15px
+}
+#show-menu:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0190a6), color-stop(1, #13c4db) );
+	background:-moz-linear-gradient( center top, #0190a6 5%, #13c4db 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0190a6', endColorstr='#13c4db');
+	background-color:#0190a6;
 }
 /**start component top menu**/
 .top-menu {
@@ -414,6 +455,76 @@ body{
   
 }
 /**end componen last photo on main page**/
+.about{
+	font-size:1.2em;
+	font-weight:400;
+}
+.video-cell{
+	margin-bottom:55px;
+	margin-top:55px;
+	border:1px solid;
+	height:515px;
+}
+
+/**start interesting component**/
+.i-date{
+	color:#db0082;
+	font-size:1.9em;
+	font-family: Roboto Slab;
+	margin-bottom:25px;
+}
+.interesting-cell{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	margin-bottom:85px;
+}
+.interesting-cell li{
+	display:block;
+}
+.interesting-cell a{
+	font-size:1.2em;
+	color:#0294a9;
+	margin-bottom:15px;
+	line-height:1.3em;
+	display:inline-block;
+}
+.i-text{
+	font-size:1.1em;
+}
+.interesting-wrapper{
+	background-image: url("/images/i-bg.png");
+    background-position: center ;
+    background-repeat:  repeat;
+	position:relative;
+}
+.interesting-wrapper::after {
+	background: rgba(0, 0, 0, 0) url("/images/border-i.png") repeat-x scroll 0 0;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -15px;
+    width: 100%;
+}
+.interesting-wrapper::before {
+	background: rgba(0, 0, 0, 0) url("/images/border-i.png") repeat-x scroll 0 0;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.read-all{
+	color:#0294a9;
+	font-size:1.2em;
+	margin-bottom:70px;
+	display:inline-block;
+}
+/**end interesting component**/
 @media (max-width: 1200px) {
 	.top-menu li {
 		padding-left: 10px;
@@ -441,6 +552,7 @@ body{
 @media(max-width: 991px){
 	body{
 		margin-top:40px;
+		text-align:center;
 	}
 	.slide-head h2 {
 		font-size: 14px;
@@ -489,7 +601,7 @@ body{
 	}
 	.callback-btn{
 		height: 30px;
-		line-height: 30px;
+		line-height: 25px;
 		padding-left:5px;
 		padding-right:5px;
 	}
@@ -555,8 +667,11 @@ body{
 	}
 	.order-detail a, .order-send a{
 		font-size:12px;
-		padding-left:3px;
-		padding-right:3px;
+		padding-left:2px;
+		padding-right:2px;
+	}
+	.order-list-name{
+		height:60px;
 	}
 }
 @media (max-width: 480px) {
