@@ -1,0 +1,50 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.top-section {
+	background-color: #fcf8f6;
+    background-image:  url('/images/top-bg.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+	min-height:117px;
+}
+.slogan {
+    padding-top: 20px;
+}
+.logo{
+	padding-top:5px;
+	margin-bottom:5px;
+}
+.logo-text{
+	color:#ff9300;
+	text-transform:uppercase;
+	font-size:1em;
+}
+.log-wrapper {
+    padding: 0;
+}
+.top-content-wrapper{
+	margin-bottom:20px;
+}
+/**start component top menu**/
+.top-menu {
+    margin: 0;
+    padding: 0;
+}
+.top-menu li {
+    display: inline-block;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+.top-menu li:first-child{
+	margin-left:0px;
+}
+.top-menu li:last-child{
+	margin-right:0px;
+}
+.top-menu li a{
+	font-size:1.21em;
+	color:#000;
+}
+/**end component top menu**/
+
