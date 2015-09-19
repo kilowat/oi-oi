@@ -7,6 +7,7 @@ body{
     background-position: center center;
     background-repeat:  no-repeat;
 	height:117px;
+	background-size: cover;
 }
 .slogan {
     padding-top: 20px;
@@ -266,30 +267,6 @@ body{
 }
 /* This button was generated using CSSButtonGenerator.com */
 /**end slider component**/
-
-/**start component order-list on main page**/
-.order-wrapper{
-	background-image:url('/images/order-bg.png');
-}
-.order-wrapper .row {
-    width: 100%;
-}
-.order-list-wrapper{
-	text-align:center;
-}
-.order-button-wrapper{
-	margin:0px;
-	padding:0px;
-}
-.order-button-wrapper li{
-	display:inline-block;
-}
-.order-list-cell img{
-	width:100%;
-}
-.order-list-cell{
-	margin-bottom:40px;
-}
 .order-header{
 	display: inline-block;
     font-family: "Roboto Slab",serif;
@@ -320,6 +297,29 @@ body{
     position: absolute;
     top: 50%;
     width: 40px;
+}
+/**start component order-list on main page**/
+.order-wrapper{
+	background-image:url('/images/order-bg.png');
+}
+.order-wrapper .row {
+    width: 100%;
+}
+.order-list-wrapper{
+	text-align:center;
+}
+.order-button-wrapper{
+	margin:0px;
+	padding:0px;
+}
+.order-button-wrapper li{
+	display:inline-block;
+}
+.order-list-cell img{
+	width:100%;
+}
+.order-list-cell{
+	margin-bottom:40px;
 }
 .order-wrapper{
 	text-align:center;
@@ -400,6 +400,20 @@ body{
 }
 /**end component order-list on main page**/
 
+/**start component last photo on main page**/
+.last-photo-wrapper{
+	text-align:center;
+}
+.last-photo-cell {
+    margin-bottom: 30px;
+}
+.last-photo-wrapper {
+	background-image: url("/images/border-photo.png"), url("/images/texture.jpg");
+    background-position: center bottom;
+    background-repeat: repeat-x, repeat;
+  
+}
+/**end componen last photo on main page**/
 @media (max-width: 1200px) {
 	.top-menu li {
 		padding-left: 10px;
@@ -502,6 +516,7 @@ body{
 	}
 }
 @media (max-width: 768px) {
+
 	.see-detail{
 		height: 35px;
 		line-height: 36px;
@@ -545,6 +560,9 @@ body{
 	}
 }
 @media (max-width: 480px) {
+	.last-photo-cell img{
+		width:100%;
+	}
 	.slide-head{
 		display:none;
 	}
@@ -577,6 +595,57 @@ body{
   }
   .order-list-cell img{
 	width:100%;
+  }
+}
+
+
+/*******extension bootsrap css********/
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+ 
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.col-xs-s-2 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .col-xs-s-2 {
+    width: 33.3%;
+    float: left;
   }
 }
 
