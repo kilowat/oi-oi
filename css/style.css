@@ -145,7 +145,6 @@ body{
 	border-bottom-left-radius:27px;
 	text-indent:0;
 	border:1px solid #8fb4d9;
-	display:inline-block;
 	color:#ffffff;
 	font-size:15px;
 	font-weight:normal;
@@ -341,7 +340,9 @@ body{
 }
 /**start component order-list on main page**/
 .order-wrapper{
-	background-image:url('/images/order-bg.png');
+	background-image:url('/images/bg-clawn.jpg'),url('/images/bg-baloon.jpg'), url('/images/order-bg.png');
+	background-repeat:no-repeat, no-repeat, repeat;
+	background-position: left bottom, right bottom, center center;
 }
 .order-wrapper .row {
     width: 100%;
@@ -525,7 +526,77 @@ body{
 	display:inline-block;
 }
 /**end interesting component**/
+
+/**start component why wee**/
+.why-wee-text{
+	font-family: "Roboto Slab",serif;
+	font-size:1.5em;
+	line-height: 1.2em;
+}
+.why-wee-wrapper{
+	background-image: url('/images/why-wee-left-bg.jpg'),url('/images/why-wee-right-bg.jpg'),url('/images/order-bg.png');
+	background-position: left bottom, right bottom, center center;
+    background-repeat: no-repeat, no-repeat, repeat;	
+
+}
+.why-wee-wrapper>.container{
+	background-image:url('/images/opacity-bg.png');
+}
+.why-wee-wrapper .order-header{
+	padding-bottom:20px;
+}
+.why-wee-name{
+	margin-bottom:20px;
+	margin-top:20px;
+	font-size:1.4em;
+}
+.why-wee-text{
+	font-size:1.1em;
+	font-weight:300;
+}
+.why-wee-cell ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.why-wee-cell{
+	text-align:center;
+	margin-bottom:50px;
+}
+.why-wee-cell ul li{
+	display:block;
+}
+.why-wee-img img {
+    border: 1px solid #fffbeb;
+    border-radius: 100%;
+}
+/**end component why wee**/
+@media (max-width: 2040px) {
+	.order-wrapper{
+		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
+	}
+}
+@media (max-width: 1785px) {
+	.order-wrapper{
+		background-image:url('/images/bg-clawn-small.jpg'),url('/images/bg-baloon-small.jpg'), url('/images/order-bg.png');
+	}
+}
+@media (max-width: 1608px) {
+	.why-wee-wrapper{
+		background-image: url('/images/why-wee-left-normal-bg.jpg'),url('/images/why-wee-right-normal-bg.jpg'),url('/images/order-bg.png');
+	}
+}
+
+@media (max-width: 1560px) {
+	.why-wee-wrapper{
+		background-image: url('/images/why-wee-left-small-bg.jpg'),url('/images/why-wee-right-small-bg.jpg'),url('/images/order-bg.png');
+	}
+	.order-wrapper{
+		background-image:url('/images/order-bg.png'),url('/images/order-bg.png'), url('/images/order-bg.png');
+	}
+}
 @media (max-width: 1200px) {
+
 	.top-menu li {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -547,9 +618,11 @@ body{
 		padding-left:10px;
 		padding-right:10px;
 	}
+
 }
 
 @media(max-width: 991px){
+
 	body{
 		margin-top:40px;
 		text-align:center;
@@ -628,6 +701,9 @@ body{
 	}
 }
 @media (max-width: 768px) {
+	.why-wee-wrapper{
+		background-image: url('/images/order-bg.png'),url('/images/order-bg.png'),url('/images/order-bg.png');
+	}
 
 	.see-detail{
 		height: 35px;
