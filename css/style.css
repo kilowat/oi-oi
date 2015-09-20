@@ -649,6 +649,8 @@ body{
 	top:61%;
 }
 /**end component work with us**/
+
+/**start component pather**/
 .pahter-text {
     font-family: Roboto Slab;
     font-size: 1.5em;
@@ -659,9 +661,71 @@ body{
 	text-align: center;
 	margin-bottom:100px;
 }
-/**start component pather**/
-
+.pahter-wrapper{
+	position:relative;
+}
+.pahter-wrapper::after {
+	background: rgba(0, 0, 0, 0) url("/images/border-i-pahter.png") repeat-x scroll 0 0;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -15px;
+    width: 100%;
+}
+.pahter-wrapper::before {
+	background: rgba(0, 0, 0, 0) url("/images/border-i-2-pather.png") repeat-x scroll 0 0;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+}
 /**end component pather**/
+
+/**start map styles**/
+.map-wrapper{
+	background:#f2f2f2;	
+}
+.map-wrapper>.container{
+	position:relative;
+}
+.map-bage {
+    background-image: url('/images/bage.png');
+    display: block;
+    height: 305px;
+    position: absolute;
+    right: 20px;
+    width: 349px;
+    z-index: 2;
+	top: 89%;
+}
+.map-bage ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	color:#fff;
+	font-size:1.6em;
+	text-align:left;
+	padding-left:25px;
+}
+.map-bage ul li:first-child, .map-bage ul li:last-child{
+	font-size:17px;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.map-bage ul li a{
+	color:#fff;
+	text-decoration:underline;
+}
+#map{
+	height:650px;
+	width:100%;
+}
+/**end map styles**/
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');

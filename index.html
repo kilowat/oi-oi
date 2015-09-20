@@ -519,5 +519,58 @@
 		</div>
 	</div>
 	<!--start component pather-->
+	
+	<!--start map section-->
+	<div class="container-fluid map-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Как с нами связаться</h1>
+					<div class="map-bage">
+						<ul>
+							<li>г. Краснодар<br>ул. Рождественская набережная,41</li>
+							<li>+7(861)123-45-67</li>
+							<li>+7(861)123-45-67</li>
+							<li>+7(861)123-45-67</li>
+							<li><a href="mailto:info@gruppa-oioi.ru">info@gruppa-oioi.ru</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="map">
+			</div>
+		</div>
+
+		<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+		<script type="text/javascript">
+				//ymaps.ready(init);
+				var myMap, 
+					myPlacemark;
+
+				function init(){ 
+					myMap = new ymaps.Map("map", {
+						center: [45.03098630, 38.92131550],
+						zoom: 15
+					}); 
+					
+					myPlacemark = new ymaps.Placemark([45.03098630, 38.92131550], {
+						hintContent: 'Наш офис',
+						balloonContent: 'Здесь наш офис'
+					});
+					
+					myMap.geoObjects.add(myPlacemark);
+					myMap.controls.add(new ymaps.control.ZoomControl());
+					myMap.behaviors.disable('scrollZoom');
+					myMap.controls.remove('searchControl');
+					myMap.controls.remove('trafficControl');
+					myMap.controls.remove('fullscreenControl');
+					myMap.controls.remove('geolocationControl');
+					myMap.controls.remove('layerControl');
+				}
+		</script>
+	</div>
+	<!--end map section-->
   </body>
 </html>
