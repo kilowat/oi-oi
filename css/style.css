@@ -510,13 +510,13 @@ body{
     width: 100%;
 }
 .interesting-wrapper::before {
-	background: rgba(0, 0, 0, 0) url("/images/border-i.png") repeat-x scroll 0 0;
+	background: rgba(0, 0, 0, 0) url("/images/border-i-2.png") repeat-x scroll 0 0;
     content: "";
     display: block;
     height: 20px;
     left: 0;
     position: absolute;
-    bottom: 15px;
+    bottom: -18px;
     width: 100%;
 }
 .read-all{
@@ -534,9 +534,13 @@ body{
 	line-height: 1.2em;
 }
 .why-wee-wrapper{
-	background-image: url('/images/why-wee-left-bg.jpg'),url('/images/why-wee-right-bg.jpg'),url('/images/order-bg.png');
-	background-position: left bottom, right bottom, center center;
-    background-repeat: no-repeat, no-repeat, repeat;	
+	background-image: url('/images/why-wee-left-bg.jpg'),
+					  url('/images/why-wee-right-bg.jpg'),
+					  url('/images/why-wee-particle-left-bg.jpg'),
+					  url('/images/why-wee-particle-rigth-bg.jpg'),
+					  url('/images/order-bg.png');
+	background-position: left bottom, right bottom,left top, right top, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;	
 
 }
 .why-wee-wrapper>.container{
@@ -571,6 +575,79 @@ body{
     border-radius: 100%;
 }
 /**end component why wee**/
+
+/**start component person list**/
+.person-text{
+	font-size:1.5em;
+	color:#fff;
+}
+.person-list-wrapper{
+	text-align:center;
+	background-image:url('/images/person-bg-2.jpg');
+}
+.person-list {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 20px;
+    padding: 0;
+	margin-bottom:40px;
+}
+.person-img {
+	border:1px solid;
+	border-radius:100%;
+
+}
+.person-name{
+	margin-bottom:10px;
+	margin-top:10px;
+	color:#fff;
+	font-size:1.2em;
+}
+.person-img > img {
+    border: 0 solid;
+    border-radius: 100%;
+    margin: 6px;
+}
+.person-list-wrapper .order-header{
+	color:#fff;
+}
+/**end component person list**/
+
+/**start component work with us**/
+.with-us-wrapper {
+    background: #9f1a6e none repeat scroll 0 0;
+	text-align: center;
+}
+.with-us-wrapper .order-header{
+	color:#fff;
+	padding-bottom:20px;
+}
+.with-us-cell{
+	margin-bottom:60px;
+}
+.with-us-cell > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+	display:inline-block;
+}
+.with-us-name {
+    color: #ecf9ff;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.with-us-text {
+    color: #ecf9ff;
+    font-size: 1.1em;
+}
+.with-us-wrapper .person-text{
+	margin-bottom:50px;
+}
+.with-us-wrapper .order-header::after, .with-us-wrapper .order-header::before{
+	top:61%;
+}
+/**end component work with us**/
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
@@ -583,13 +660,22 @@ body{
 }
 @media (max-width: 1608px) {
 	.why-wee-wrapper{
-		background-image: url('/images/why-wee-left-normal-bg.jpg'),url('/images/why-wee-right-normal-bg.jpg'),url('/images/order-bg.png');
+		background-image: url('/images/why-wee-left-normal-bg.jpg'),
+						  url('/images/why-wee-right-normal-bg.jpg'),
+						  url('/images/why-wee-particle-left-bg.jpg'),
+						  url('/images/why-wee-particle-rigth-bg.jpg'),
+						  url('/images/order-bg.png');
 	}
 }
 
 @media (max-width: 1560px) {
 	.why-wee-wrapper{
-		background-image: url('/images/why-wee-left-small-bg.jpg'),url('/images/why-wee-right-small-bg.jpg'),url('/images/order-bg.png');
+		background-image: url('/images/why-wee-left-small-bg.jpg'),
+						  url('/images/why-wee-right-small-bg.jpg'),
+						  url('/images/why-wee-particle-left-bg.jpg'),
+						  url('/images/order-bg.png'),
+						  url('/images/order-bg.png');
+		background-repeat: no-repeat, no-repeat, repeat-x, no-repeat, repeat;	
 	}
 	.order-wrapper{
 		background-image:url('/images/order-bg.png'),url('/images/order-bg.png'), url('/images/order-bg.png');
