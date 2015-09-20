@@ -9,15 +9,28 @@ oi_oi = function(){
 			
 			$('.slide-head').css('left',w/2-wCenter+'px');
 			$('.see-detail').css('left',w/2-wCenter+'px');
-			$('.swiper-container').height(window.innerWidth/q);
-			
-			
+			$('.swiper-container').height(window.innerWidth/q);	
+		},
+		miniSliderResize:function(){
+			var count = 4;
+			if(window.innerWidth<=960)
+				count = 3;
+			if(window.innerWidth<=720)
+				count = 2;
+			if(window.innerWidth<=480)
+				count = 1;
+		
+			$('.slider-mini').slick({
+			  slidesToShow: count,
+			});
 		}
 	}
 }
 window.onresize = function(){
 	oi_oi().sliderResize();
 };
+
 $(document).ready(function(){
 	oi_oi().sliderResize();
+	oi_oi().miniSliderResize();
 });
