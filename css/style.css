@@ -981,8 +981,16 @@ footer .row {
 .ok-ico:hover{
 	background-position: -177px -48px;
 }
-
 /**end social widgets ico**/
+.section-head {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/**start component bread crumbs**/
+.bread-crumbs-wrapper li {
+    display: inline-block;
+}
+/**end component bread crumbs**/
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
