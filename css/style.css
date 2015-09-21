@@ -726,6 +726,162 @@ body{
 	width:100%;
 }
 /**end map styles**/
+
+/**start component feedback**/
+.feed-back-wrapper{
+	background-image: url('/images/feed-back-clawn-bg-right-top.jpg'),
+					  url('/images/feed-back-clawn-bg-left-top.png'),
+					  url('/images/feed-back-clawn-bg-left.jpg'),
+					  url('/images/feed-back-clawn-bg.jpg'),
+					  url('/images/feed-back-bg.png');
+	background-position: right top, left top, left bottom, right bottom, center center;
+	background-repeat: no-repeat,no-repeat, no-repeat, no-repeat, repeat;
+}
+.feed-back-text {
+    font-family: Roboto Slab;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 70px;
+}
+.feed-back-wrapper .order-header{
+	padding-bottom: 20px;
+}
+.name-input, .contact-data-input, .message-input{
+    margin: auto;
+    max-width: 620px;
+   margin-bottom: 15px;
+}
+.name-input input, .message-input textarea{
+	width: 100%;
+}
+.phone-input input{
+	float: left;
+}
+.email-input input{
+	float: right;
+}
+.phone-input input, .email-input input{
+	display: inline-block;
+	width: 48%;
+}
+.feed-back-wrapper input[type="text"], textarea{
+	height: 65px;
+	border: 1px solid #12c3d8;
+	background: #fff;
+	color: #000;
+	border-radius: 10px;
+	padding-left: 20px;
+	font-size: 1.5em;
+}
+.feed-back-wrapper  textarea{
+	height: 180px;
+}
+.contact-data-input:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+#send-feedback{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #13c4db), color-stop(1, #0190a6) );
+	background:-moz-linear-gradient( center top, #13c4db 5%, #0190a6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#13c4db', endColorstr='#0190a6');
+	background-color:#13c4db;
+	-webkit-border-top-left-radius:27px;
+	-moz-border-radius-topleft:27px;
+	border-top-left-radius:27px;
+	-webkit-border-top-right-radius:27px;
+	-moz-border-radius-topright:27px;
+	border-top-right-radius:27px;
+	-webkit-border-bottom-right-radius:27px;
+	-moz-border-radius-bottomright:27px;
+	border-bottom-right-radius:27px;
+	-webkit-border-bottom-left-radius:27px;
+	-moz-border-radius-bottomleft:27px;
+	border-bottom-left-radius:27px;
+	text-indent:0;
+	border:1px solid #8fb4d9;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:normal;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+	padding-left:20px;
+	padding-right:20px;
+	margin-right:5px;
+}
+#send-feedback:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0190a6), color-stop(1, #13c4db) );
+	background:-moz-linear-gradient( center top, #0190a6 5%, #13c4db 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0190a6', endColorstr='#13c4db');
+	background-color:#0190a6;
+}
+#clear-from{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ba1c7d), color-stop(1, #9d1a6d) );
+	background:-moz-linear-gradient( center top, #ba1c7d 5%, #9d1a6d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ba1c7d', endColorstr='#9d1a6d');
+	background-color:#ba1c7d;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:400;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	text-decoration:none;
+	text-align:center;
+	border-radius: 25px 25px 25px 25px;
+	left: -2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    border: none;
+    margin-left: 5px;
+}
+#clear-from:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0190a6), color-stop(1, #12c3d7) );
+	background:-moz-linear-gradient( center top, #0190a6 5%, #12c3d7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0190a6', endColorstr='#12c3d7');
+	background-color:#0190a6;
+	text-decoration:none;
+	color:#fff;
+}
+.button-wrapper{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+/**end component feedback**/
+.social-widgets-wrapper .feed-back-text {
+    margin-bottom: 35px;
+}
+.social-widgets-wrapper .order-header{
+	padding-bottom: 20px;
+}
+.social-cell{
+	width: 230px;
+	height: 320px;
+	border: 1px solid;
+}
+
+.social-widgets-wrapper .order-header::before, .feed-back-wrapper .order-header::before{
+ 	top: 57%;
+}
+
+.social-widgets-wrapper .order-header::after, .feed-back-wrapper .order-header::after {
+    top: 57%;
+
+}
+.social-widgets-wrapper{
+	margin-bottom: 50px;
+}
+footer{
+	background-color: #9f1a6e;
+}
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
@@ -735,8 +891,16 @@ body{
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-small.jpg'),url('/images/bg-baloon-small.jpg'), url('/images/order-bg.png');
 	}
+	
 }
 @media (max-width: 1608px) {
+	.feed-back-wrapper{
+		background-image: url('/images/feed-back-clawn-bg-right-top-normal.jpg'),
+						  url('/images/feed-back-clawn-bg-left-top-normal.png'),
+						  url('/images/feed-back-clawn-bg-left-normal.jpg'),
+						  url('/images/feed-back-clawn-normal-bg.jpg'),
+						  url('/images/feed-back-bg.png');
+	}
 	.why-wee-wrapper{
 		background-image: url('/images/why-wee-left-normal-bg.jpg'),
 						  url('/images/why-wee-right-normal-bg.jpg'),
@@ -759,8 +923,16 @@ body{
 		background-image:url('/images/order-bg.png'),url('/images/order-bg.png'), url('/images/order-bg.png');
 	}
 }
+@media (max-width:1300px){
+	.feed-back-wrapper{
+		background-image: url('/images/feed-back-clawn-bg-right-top-mini.jpg'),
+						  url('/images/feed-back-clawn-bg-left-top-mini.png'),
+						  url('/images/feed-back-clawn-bg-left-mini.jpg'),
+						  url('/images/feed-back-clawn-mini-bg.jpg'),
+					   	  url('/images/feed-back-bg.png');
+	}
+}
 @media (max-width: 1200px) {
-
 	.top-menu li {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -786,7 +958,13 @@ body{
 }
 
 @media(max-width: 991px){
-
+	.feed-back-wrapper{
+		background-image: url('/images/feed-back-bg.png'),
+						  url('/images/feed-back-bg.png'),
+						  url('/images/feed-back-bg.png'),
+						  url('/images/feed-back-bg.png'),
+					   	  url('/images/feed-back-bg.png');
+	}
 	body{
 		margin-top:40px;
 		text-align:center;
