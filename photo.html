@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/swiper.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="j/s/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/swiper.min.css" rel="stylesheet">
+	<link href="/css/slick.css" rel="stylesheet">
+	<link href="/css/slick-theme.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<header>
+		<div class="containter-fluid top-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="top-wrapper">
+							<div class="log-wrapper">
+								<a href="/" title="Ой Ой">
+									<img class="logo" src="/images/logo.png" alt="ОЙ ОЙ">
+									<strong class="logo-text">проведение детских праздников</strong>
+								</a>
+							</div>
+							<div class="log-right-wrapper">
+								<div class="top-content-wrapper">
+									<button id="show-menu">Меню</button>
+									<div class="left-contact">
+										<img class="slogan" src="/images/slogan.png" alt="C нами веселей!">
+									</div>
+									<div class="right-contacnt">
+										<div class="contact-left-wrapper">
+										<!--start include area phone number-->
+											<div class="phone-number">+7(918) 123-54-67</div>
+											<div class="how-to-feedback"><a href="#" title="Как с нами связаться">Как с нами связаться</a></div>
+										<!--end include area phone numpber-->
+										</div>
+										<!--start component callback-->
+											<div class="callback-module">
+												<button class="callback-btn">Заказать звонок</button>
+											</div>
+										<!--end compnent callback-->
+									</div>
+								</div>
+								<!--start companent menu-->
+									<nav>
+										<ul class="top-menu">
+											<li><a href="#home" title="#">Группа ОЙ ОЙ</a></li>
+											<li><a href="#service" title="#">Услуги</a></li>
+											<li><a href="#interesting" title="#">Это интересно</a></li>
+											<li><a href="#photo" title="#">Фотографии</a></li>
+											<li><a href="#faq" title="#">Вопрос ответ</a></li>
+											<li><a href="#feedback" title="#">Отзывы</a></li>
+										</ul>
+									</nav>
+								<!--end compontent menu-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--start component main-slider-->
+	<div class="container-fluid slider-container">
+		<div class="row">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide-head">
+						  <h2>Заголовок слайда1</h2>
+						</div>
+						<a class="see-detail" href="#" title="Подробнее">Хочу подробнее</a>
+						<div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / cover ;height: 100%;width: 100%;"> </div>
+					  </div>
+
+					  <div class="swiper-slide">
+						<div class="slide-head">
+						  <h2>Заголовок слайда1</h2>
+						</div>
+						<a class="see-detail" href="#" title="Подробнее">Хочу подробнее</a>
+						<div style="background: rgba(0, 0, 0, 0) url(/images/slide-1.jpg) no-repeat scroll top center / cover ;height: 100%;width: 100%;"> </div>
+					  </div>
+
+				  </div>
+				  <!--
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
+				  -->
+			</div>
+				<script>
+					$(document).ready(function(){
+					  var swiper = new Swiper('.swiper-container', {
+
+					  });
+					})
+				  </script>
+		</div>
+	</div>
+	<!--end component main-slider -->
+	<!--start component order-list -->
+	<div class="container-fluid order-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="order-header">Организация детских праздников в краснодаре</h1>
+				</div>
+			</div>
+			<div class="row order-list-wrapper">
+				<!--foreach $arResult-->
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Организация празника</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Тематические праздники к 23 февраля или 8 марта</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Организация празника</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Организация празника</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Организация празника</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="order-list-cell">
+						<a href="#" title="#"><img src="/images/item.jpg" alt="#"></a>
+						<span class="order-list-name">Организация празника</span>
+						<ul class="order-button-wrapper">
+							<li class="order-detail"><a href="#" title="#">Подробней</a></li>
+							<li class="order-send"><a href="#" title="#">Заказать</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--endforeach-->
+			</div>
+		</div>
+	</div>
+	<!--end component order-list -->
+	
+	<!--start component last photo-->
+	<div class="container-fluid last-photo-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="order-header">Самые свежие фото с мероприятий</h1>
+				</div>
+			</div>
+			<div class="row">
+				<!--start foreach $arResult-->
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<div class="col-lg-1-5 col-md-3 col-sm-4 col-xs-6 col-xsm">
+					<div class="last-photo-cell">
+						<a href="#" title="#"><img src="/images/photo.jpg" alt="#"></a>
+					</div>
+				</div>
+				<!--end foreach-->
+			</div>
+		</div>
+	</div>
+	<!--end compnent last photo-->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="order-header">Группа ОЙ ОЙ</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 about">
+				Ой-ой, у кого-то день рождения? Новый год, встреча с любимыми друзьями или другой повод хорошо повеселиться? Тогда вы попали по адресу! В творческой группе «ОЙ-ОЙ» уже 3 года рождаются идеи и сценарии ярких, веселых и самых искренних праздников - детских! Мы радуем тех, кто умеет от души смеяться, улыбаться самой искренней улыбкой и верит в чудеса. Проводим мероприятия для детей от 3 до 12 лет. И знаете, что? Нас зовут снова и снова и рекомендуют друзьям! Хотите знать, почему? Заходите, расскажем!
+Согласитесь, детей нельзя обмануть. Поэтому мы не приходим на праздник с распечатанной на принтере картой или заученной скучной программой. Живой праздник – настоящие костюмы и мешок неповторимой атрибутики к ним: если карта, то кожаная, если сапоги, то точь-в-точь как у пирата, если Карлсон – то с пропеллером… Нужно что-то быстро поменять по ходу конкурса? Без проблем, мы реагируем на любые изменения.
+
+			</div>
+		</div>
+		<div class="row video-wrapper">
+			<div class="col-md-12">
+				<div class="video-cell">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--start component interesting list-->
+	<div class="container-fluid interesting-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Это интересно</h1>
+				</div>
+			</div>
+			<div class="row">
+				<!--foreach $arResult-->
+				<div class="col-md-4">
+					<ul class="interesting-cell">
+						<li><span class="i-date">25.02.2005</span></li>
+						<li><a href="#" title="#">Особенности декорирования зала для детских мероприятий</a></li>
+						<li class="i-text">Обзор способов декора стен и мебели. Современные материалы и ткани. Подбор стиля и драперовки.</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="interesting-cell">
+						<li><span class="i-date">25.02.2005</span></li>
+						<li><a href="#" title="#">Особенности декорирования зала для детских мероприятий</a></li>
+						<li class="i-text">Обзор способов декора стен и мебели. Современные материалы и ткани. Подбор стиля и драперовки.</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul class="interesting-cell">
+						<li><span class="i-date">25.02.2005</span></li>
+						<li><a href="#" title="#">Особенности декорирования зала для детских мероприятий</a></li>
+						<li class="i-text">Обзор способов декора стен и мебели. Современные материалы и ткани. Подбор стиля и драперовки.</li>
+					</ul>
+				</div>
+				<!--end foreach-->
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="#" class="read-all" title="#">Читать все материалы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end component interesting list-->
+	
+	<!--start component why wee list-->
+	<div class="container-fluid why-wee-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">ПОЧЕМУ С «ОЙ-ОЙ» ПРАЗДНИКИ ВСЕГДА УДАЮТСЯ?</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="why-wee-text section-text">Существует несколько везких причин, благодаря<br> которым приглашать нас одно удовольствие!</p>
+				</div>
+			</div>
+			<div class="row">
+				<!--foreach $arResult-->
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="why-wee-cell">
+						<ul>
+							<li class="why-wee-img"><img src="/images/why-wee-img.jpg" alt="#"></li>
+							<li class="why-wee-name">Лучшая аппаратура</li>
+							<li class="why-wee-text">Приходим со своим звуком: ноутбук и мощные колонки под контролем звукорежиссера, что позволяет аниматору полностью сосредоточиться на детях и не отвлекаться на организационные моменты.</li>
+						</ul>
+					</div>
+				</div>
+				<!--endforeach-->
+			</div>
+		</div>
+	</div>
+	<!--end component why wee list-->
+	
+	<!--start component person list-->
+	<div class="container-fluid person-list-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Персонажи "ОЙ-ОЙ"</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="person-text section-text">Восторг, удивление, радость – вот что мы хотим подарить вашим детям. А что может быть лучше, чем любимый сказочный герой, который пришел лично к тебе в гости в твой день рождения? Чтобы вы могли выбрать самого подходящего персонажа, мы постоянно ищем новые образы, заказываем новые костюмы и готовим новые конкурсные программы. На сегодня это 13 героев, но в  планах добавить еще как минимум троих. Выбирайте!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!--foreach $arResult-->
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<ul class="person-list">
+						<li class="person-img"><img src="/images/person.jpg" alt="#"></li>
+						<li class="person-name">Карлсон</li>
+					</ul>
+					<!--end foreach-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end component person list-->
+	
+	<!--start component work with us-->
+	<div class="container-fluid with-us-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Работать с нами легко и просто</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="person-text section-text">Для наших клиентов решение их проблемы выглядит как четыре простых шага</p>
+				</div>
+			</div>
+			<div class="row">
+				<!--foreach $arResult-->
+				<div class="col-md-4">
+					<div class="with-us-cell">
+						<ul>
+							<li class="with-us-img"><img src="/images/with-us.png" alt="#"></li>
+							<li class="with-us-name">Первый контакт</li>
+							<li class="with-us-text">После того, как ваш праздник окончен, а дети доволные и полные впечатлений отправились отдыхать мы завершаем мероприятие, приводим помещение в изначальное состояние и незаметно покидаем вас.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="with-us-cell">
+						<ul>
+							<li class="with-us-img"><img src="/images/with-us.png" alt="#"></li>
+							<li class="with-us-name">Первый контакт</li>
+							<li class="with-us-text">После того, как ваш праздник окончен, а дети доволные и полные впечатлений отправились отдыхать мы завершаем мероприятие, приводим помещение в изначальное состояние и незаметно покидаем вас.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="with-us-cell">
+						<ul>
+							<li class="with-us-img"><img src="/images/with-us.png" alt="#"></li>
+							<li class="with-us-name">Первый контакт</li>
+							<li class="with-us-text">После того, как ваш праздник окончен, а дети доволные и полные впечатлений отправились отдыхать мы завершаем мероприятие, приводим помещение в изначальное состояние и незаметно покидаем вас.</li>
+						</ul>
+					</div>
+				</div>
+				<!--endforeach-->
+			</div>
+		</div>
+	</div>
+	<!--end component work with us-->
+	
+	<!--start component paher-->
+<div class="container-fluid pahter-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Наши партнеры</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="pahter-text section-text">Для наших клиентов решение их проблемы выглядит как четыре простых шага</p>
+				</div>
+			</div>
+			<div class="row slider-mini-wrapper">
+				<div class="col-md-12">
+					<div class="slider-mini">
+						<div><img src="/images/sl-1.png" alt="#"></div>
+						<div><img src="/images/sl-2.png" alt="#"></div>
+						<div><img src="/images/sl-1.png" alt="#"></div>
+						<div><img src="/images/sl-2.png" alt="#"></div>
+						<div><img src="/images/sl-2.png" alt="#"></div>
+						<div><img src="/images/sl-1.png" alt="#"></div>						
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--start component pather-->
+	
+	<!--start map section-->
+	<div class="container-fluid map-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="order-header">Как с нами связаться</h1>
+					<div class="map-bage">
+						<ul>
+							<li>г. Краснодар<br>ул. Рождественская набережная,41</li>
+							<li>+7(861)123-45-67</li>
+							<li>+7(861)123-45-67</li>
+							<li>+7(861)123-45-67</li>
+							<li><a href="mailto:info@gruppa-oioi.ru">info@gruppa-oioi.ru</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="map">
+			</div>
+		</div>
+
+		<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+		<script type="text/javascript">
+				//ymaps.ready(init);
+				var myMap, 
+					myPlacemark;
+
+				function init(){ 
+					myMap = new ymaps.Map("map", {
+						center: [45.03098630, 38.92131550],
+						zoom: 15
+					}); 
+					
+					myPlacemark = new ymaps.Placemark([45.03098630, 38.92131550], {
+						hintContent: 'Наш офис',
+						balloonContent: 'Здесь наш офис'
+					});
+					
+					myMap.geoObjects.add(myPlacemark);
+					myMap.controls.add(new ymaps.control.ZoomControl());
+					myMap.behaviors.disable('scrollZoom');
+					myMap.controls.remove('searchControl');
+					myMap.controls.remove('trafficControl');
+					myMap.controls.remove('fullscreenControl');
+					myMap.controls.remove('geolocationControl');
+					myMap.controls.remove('layerControl');
+				}
+		</script>
+	</div>
+	<!--end map section-->
+	
+	<!--start component feedback-->
+	<div class="container-fluid feed-back-wrapper text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="order-header">Оставтье заявку</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="feed-back-text section-text">Если вам неудобно сейчас нам позвонить, то отправьте нам заявку и<br> мы связемся с вами сами в удобное время</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="name-input">
+						<input type="text" id="name-input" placeholder="Ваи имя и фамилия">
+					</div>
+					<div class="contact-data-input">
+						<div class="phone-input">
+							<input type="text" id="phone-input" placeholder="Номер телефона">
+						</div>
+						<div class="email-input">
+							<input type="text" placeholder="E-mail" id="email-input">
+						</div>
+					</div>
+					<div class="message-input">
+						<textarea id="message-input" placeholder="Ваши комментарии"></textarea>
+					</div>
+					<div class="button-wrapper">
+						<button id="send-feedback">Отправить запрос</button>
+						<button id="clear-from">Отчистить форму</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end component feedback-->
+
+	<!--start social widgets-->
+	<div class="container-fluid social-widgets-wrapper text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="order-header">Следите за нами в социальных сетях</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="feed-back-text section-text">Если вам неудобно сейчас нам позвонить, то отправьте нам заявку и<br> мы связемся с вами сами в удобное время</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="social-cell">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="social-cell">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="social-cell">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="social-cell">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end social widgets-->
+	<footer class="container-fluid footer-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-xs-12 coop">
+					<span>Группа "Ой-Ой" 2012 - 2015</span>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 social-ico">
+					<ul>
+						<li><a class="vk-ico" href="#" title="#"></a></li>
+						<li><a class="fb-ico" href="#" title="#"></a></li>
+						<li><a class="inst-ico" href="#" title="#"></a></li>
+						<li><a class="ok-ico" href="#" title="#"></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12">
+					<div id="bx-compozite">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12">
+					<span>Создание сайтов - </span><a href="http://aliens.pro" title="aliens.pro">aliens.pro</a>
+				</div>
+			</div>
+		</div>	
+	</footer>
+  </body>
+</html>

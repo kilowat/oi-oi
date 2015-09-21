@@ -1058,6 +1058,7 @@ footer .row {
 }
 
 @media(max-width: 991px){
+
 	.map-bage ul li:first-child, .map-bage ul li:last-child {
 	    font-size: 14px;
 	    margin-bottom: 18px;
@@ -1213,6 +1214,68 @@ footer .row {
 	}
 	.social-widgets-wrapper{
 		padding-bottom: 20px;
+	}
+	.top-menu {
+    	display: block;
+	}
+	.top-menu li{
+		display: block;
+
+	}
+	.top-menu li a{
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.top-menu li a:hover{
+		background: #12c3d7 ;
+		color: #fff;
+	}
+	.top-menu {
+	    background: #fffbeb none repeat scroll 0 0;
+	    border-color: #ccc;
+	    border-image: none;
+	    border-radius: 0 0 10px 10px;
+	    border-style: none solid solid;
+	    border-width: medium 2px 2px;
+	    display: block;
+	    left: 0;
+	    position: absolute;
+	    top: 40px;
+	    width: 100%;
+	    z-index: 3;
+	}
+	.top-menu li a {
+	    border-top: 1px solid #ccc;
+	    display: inline-block;
+	    width: 100%;
+	    position: relative;
+	}
+
+	.top-menu li{
+		padding: 0px;
+	}
+	.top-menu li::after {
+	  display: none;
+	}
+	.top-menu li a::after {
+	    background: rgba(0, 0, 0, 0) url("/images/star.png") no-repeat scroll center center;
+	    content: "";
+	    display: block;
+	    height: 7px;
+	    left: 1%;
+	    position: absolute;
+	    top: 9px;
+	    width: 7px;
+	}
+	.top-menu li a::before {
+	    background: rgba(0, 0, 0, 0) url("/images/star.png") no-repeat scroll center center;
+	    content: "";
+	    display: block;
+	    height: 7px;
+	    right: 1%;
+	    position: absolute;
+	    top: 9px;
+	    width: 7px;
 	}
 }
 
