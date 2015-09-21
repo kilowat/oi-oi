@@ -364,6 +364,7 @@ body{
 }
 .order-list-cell img{
 	width:100%;
+	border-radius: 18px;
 }
 .order-list-cell{
 	margin-bottom:40px;
@@ -448,6 +449,9 @@ body{
 /**end component order-list on main page**/
 
 /**start component last photo on main page**/
+.last-photo-cell img {
+    border-radius: 15px;
+}
 .last-photo-wrapper{
 	text-align:center;
 }
