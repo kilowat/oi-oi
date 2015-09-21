@@ -1,17 +1,22 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	color:000;
+	margin-top:117px;
 }
 .text-center{
 	text-align:center;
 }
 .top-section {
-	background-color: #fcf8f6;
-    background-image:  url('/images/top-bg.jpg');
+ 	background-color: #fcf8f6;
+    background-image: url("/images/top-bg.jpg");
     background-position: center center;
-    background-repeat:  no-repeat;
-	height:117px;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 117px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 .slogan {
     padding-top: 20px;
@@ -594,8 +599,24 @@ body{
 	margin-bottom:40px;
 }
 .person-img {
-	border:1px solid;
-	border-radius:100%;
+ 	position: relative;
+ 	z-index: 0;
+}
+.person-img::before {
+    background-image: url("/images/d-b.png");
+    background-repeat: repeat;
+    border-radius: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.person-img:before{
+	position: absolute;
+	content: "";
+	width:100%;
+	height: 100%;
 
 }
 .person-name{
