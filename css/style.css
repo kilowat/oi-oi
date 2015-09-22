@@ -206,6 +206,20 @@ body{
 /**end component top menu**/
 
 /**start slider component**/
+.top-section>.container{
+	position: relative;
+
+}
+.top-section > .container::before {
+    background: rgba(0, 0, 0, 0) url("/images/sh-bg.png") no-repeat scroll center center;
+    bottom: -81px;
+    content: "";
+    display: block;
+    height: 73px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 .slider-container>.row{
 	margin:0px;
 	padding:0px;
@@ -1067,6 +1081,9 @@ footer .row {
 }
 
 @media(max-width: 991px){
+	.top-section > .container::before {
+		display: none;
+	}
 	.top-menu{
 		display:none;
 	}
