@@ -210,16 +210,6 @@ body{
 	position: relative;
 
 }
-.top-section > .container::before {
-    background: rgba(0, 0, 0, 0) url("/images/sh-bg.png") no-repeat scroll center center;
-    bottom: -81px;
-    content: "";
-    display: block;
-    height: 73px;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
 .slider-container>.row{
 	margin:0px;
 	padding:0px;
@@ -388,6 +378,7 @@ body{
 	text-align:center;
 }
 .order-list-name {
+	color: #000;
 	display: inline-block;
     font-size: 1.2em;
     height: 44px;
@@ -464,6 +455,7 @@ body{
 /**end component order-list on main page**/
 
 /**start component last photo on main page**/
+
 .last-photo-cell img {
     border-radius: 15px;
 }
