@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+	<script src="/js/jquery-2.1.4.min.js"></script>
+	<script src="/js/swiper.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="/js/slick.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/swiper.min.css" rel="stylesheet">
+	<link href="/css/slick.css" rel="stylesheet">
+	<link href="/css/slick-theme.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<header>
+		<div class="containter-fluid top-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="top-wrapper">
+							<div class="log-wrapper">
+								<a href="/" title="Ой Ой">
+									<img class="logo" src="/images/logo.png" alt="ОЙ ОЙ">
+									<strong class="logo-text">проведение детских праздников</strong>
+								</a>
+							</div>
+							<div class="log-right-wrapper">
+								<div class="top-content-wrapper">
+									<button id="show-menu">Меню</button>
+									<div class="left-contact">
+										<img class="slogan" src="/images/slogan.png" alt="C нами веселей!">
+									</div>
+									<div class="right-contacnt">
+										<div class="contact-left-wrapper">
+										<!--start include area phone number-->
+											<div class="phone-number">+7(918) 123-54-67</div>
+											<div class="how-to-feedback"><a href="#" title="Как с нами связаться">Как с нами связаться</a></div>
+										<!--end include area phone numpber-->
+										</div>
+										<!--start component callback-->
+											<div class="callback-module">
+												<button class="callback-btn">Заказать звонок</button>
+											</div>
+										<!--end compnent callback-->
+									</div>
+								</div>
+								<!--start companent menu-->
+									<nav>
+										<ul class="top-menu">
+											<li><a href="#home" title="#">Группа ОЙ ОЙ</a></li>
+											<li><a href="#service" title="#">Услуги</a></li>
+											<li><a href="#interesting" title="#">Это интересно</a></li>
+											<li><a href="#photo" title="#">Фотографии</a></li>
+											<li><a href="#faq" title="#">Вопрос ответ</a></li>
+											<li><a href="#feedback" title="#">Отзывы</a></li>
+										</ul>
+									</nav>
+									<script>
+										$('#show-menu').click(function(){
+											$('.top-menu').slideToggle();
+										});
+									</script>
+								<!--end compontent menu-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+	<!--start bread crumbs-->
+	<div class="container bread-crumbs-wrapper">
+		<div class="row">
+			<div class="col-md-12">
+				<ul>
+					<li><a href="#" title="#">Главная</a></li>
+					<li><span>Фотографии</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--end bread crumbs-->
+	
+	<!--start section title-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="order-header section-head">Фотографии</h1>
+			</div>
+		</div>
+	</div>
+	<!--end section title-->
+	
+	<!--start component interesting list on intereting page-->
+	<div class="container inters-list-wrapper">
+		<div class="row">
+			<!--foreach $arResult-->
+			<div class="col-md-6">
+				<div class="inters-cell">
+					<div class="inters-name">
+						<a href="" tilte="">Навазание элемента</a>
+					</div>
+					<div class="inters-data">20.02.2014</div>
+					<div class="inters-content">
+						<a href="" title="">
+							<img src="/images/item.jpg">
+						</a>
+						<div class="inters-text">
+							Превью текст элемента, превью текст элемента текст элемента какойто текст.
+						</div>
+					</div>
+					<div class="inters-bottom-section">
+						<span class="review-counte">количество просмотров</span>
+						<a href="" class="review-see-detail" title="">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="inters-cell">
+					<div class="inters-name">
+						<a href="" tilte="">Навазание элемента</a>
+					</div>
+					<div class="inters-data">20.02.2014</div>
+					<div class="inters-content">
+						<a href="" title="">
+							<img src="/images/item.jpg">
+						</a>
+						<div class="inters-text">
+							Превью текст элемента, превью текст элемента текст элемента какойто текст.
+						</div>
+					</div>
+					<div class="inters-bottom-section">
+						<span class="review-counte">количество просмотров</span>
+						<a href="" class="review-see-detail" title="">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="inters-cell">
+					<div class="inters-name">
+						<a href="" tilte="">Навазание элемента</a>
+					</div>
+					<div class="inters-data">20.02.2014</div>
+					<div class="inters-content">
+						<a href="" title="">
+							<img src="/images/item.jpg">
+						</a>
+						<div class="inters-text">
+							Превью текст элемента, превью текст элемента текст элемента какойто текст.
+						</div>
+					</div>
+					<div class="inters-bottom-section">
+						<span class="review-counte">количество просмотров</span>
+						<a href="" class="review-see-detail" title="">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="inters-cell">
+					<div class="inters-name">
+						<a href="" tilte="">Навазание элемента</a>
+					</div>
+					<div class="inters-data">20.02.2014</div>
+					<div class="inters-content">
+						<a href="" title="">
+							<img src="/images/item.jpg">
+						</a>
+						<div class="inters-text">
+							Превью текст элемента, превью текст элемента текст элемента какойто текст.
+						</div>
+					</div>
+					<div class="inters-bottom-section">
+						<span class="review-counte">количество просмотров</span>
+						<a href="" class="review-see-detail" title="">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!--end foreach-->
+		</div>
+	</div>
+	<!--end component interesting list on interestin page-->
+	</main>
+	<footer class="container-fluid footer-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-xs-12 coop">
+					<span>Группа "Ой-Ой" 2012 - 2015</span>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 social-ico">
+					<ul>
+						<li><a class="vk-ico" href="#" title="#"></a></li>
+						<li><a class="fb-ico" href="#" title="#"></a></li>
+						<li><a class="inst-ico" href="#" title="#"></a></li>
+						<li><a class="ok-ico" href="#" title="#"></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12">
+					<div id="bx-compozite">
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12">
+					<span>Создание сайтов - </span><a href="http://aliens.pro" title="aliens.pro">aliens.pro</a>
+				</div>
+			</div>
+		</div>	
+	</footer>
+  </body>
+</html>

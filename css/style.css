@@ -993,10 +993,88 @@ footer .row {
     padding-top: 10px;
 }
 /**start component bread crumbs**/
+.bread-crumbs-wrapper{
+	margin-top: 10px;
+}
 .bread-crumbs-wrapper li {
     display: inline-block;
+    position: relative;
+}
+.bread-crumbs-wrapper li:after{
+	display: inline-block;
+	content: ">";
+	position: relative;
+	height: 10px;
+	width:10x;
+	color: #13c5db;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.bread-crumbs-wrapper li:last-child:after{
+	display: none;
+}
+.bread-crumbs-wrapper li a{
+	color: #13c5db;
+	text-decoration: underline;
 }
 /**end component bread crumbs**/
+
+/**start component phot0-list on photos page**/
+.photo-data {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+}
+.photo-list-cell {
+    text-align: center;
+    position: relative;
+}
+.photo-list-cell img {
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-data {
+    background: rgba(0, 0, 0, 0.39) none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 11%;
+}
+/**end component photo-list on photos page**/
+
+/**start component interestin list on interesting page**/
+.inters-content::after, .inters-bottom-section:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.inters-content img {
+    float: left;
+    display: inline-block;
+    width: 49%;
+}
+.inters-content .inters-text {
+    float: left;
+    padding-left: 15px;
+    display: inline-block;
+    width: 49%;
+}
+.review-see-detail{
+	float: right;
+	width: 49%;
+	text-align: right;
+}
+.review-counter{
+	float: left;
+	display: inline-block;
+	width: 49%;
+}
+.inters-cell{
+	margin-bottom: 10px;
+}
+/**end component interesting list on interesting page**/
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
