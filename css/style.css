@@ -1046,22 +1046,7 @@ footer .row {
 /**end component bread crumbs**/
 
 /**start component phot0-list on photos page**/
-.programm-wrapper{
-	background-image: url("/images/programm-left-person.jpg"),url("/images/programm-right-person.jpg");
-    background-position: left bottom,right bottom;
-    background-repeat: no-repeat,no-repeat;
-    background-size: contain, contain;
-}
-.programm-wrapper h3 {
-    font-family: Roboto Slab;
-    font-size: 1.5em;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-main{
-	background-image:url('/images/programm-bg.png');
 
-}
 .photo-list-cell {
     text-align: center;
     position: relative;
@@ -1134,6 +1119,22 @@ main{
 /**end component interesting list on interesting page**/
 
 /**start component programm-list on main page**/
+.programm-wrapper{
+	background-image: url("/images/programm-left-person.jpg"),url("/images/programm-right-person.jpg");
+    background-position: left bottom,right bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain, contain;
+}
+.programm-wrapper h3 {
+    font-family: Roboto Slab;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+main{
+	background-image:url('/images/programm-bg.png');
+
+}
 .service-header h2 {
     color: #48bac7;
     font-family: Roboto Slab;
@@ -1241,6 +1242,9 @@ main{
 	background-color:#0190a6;
 	text-decoration:none;
 	color:#fff;
+}
+.programm-list-wrapper{
+	background-image: url('/images/progaramm-opacity.png');
 }
 
 /**end component programm-list on main page**/
