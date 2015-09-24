@@ -2,6 +2,9 @@ body{
 	font-family: 'Roboto', sans-serif;
 	color:#212121;
 }
+a{
+	color:#0294a9;
+}
 .text-center{
 	text-align:center;
 }
@@ -326,6 +329,7 @@ body{
     margin: 0px;
     position: relative;
     text-transform: uppercase;
+	font-weight:700
 }
 
 .order-header::before {
@@ -1107,14 +1111,33 @@ footer .row {
 	float: right;
 	width: 49%;
 	text-align: right;
+	font-size:1.2em;
+	text-decoration:underline;
 }
-.review-counter{
+
+.review-counte::before {
+    background: rgba(0, 0, 0, 0) url("/images/counter-ico.png") no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 22px;
+}
+.review-counte{
+	padding-left: 30px;
+	position:relative;
 	float: left;
 	display: inline-block;
 	width: 49%;
+	color:#b3b3b3;
+}
+.inters-bottom-section{
+	margin-top:25px;
 }
 .inters-cell{
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 /**end component interesting list on interesting page**/
 
@@ -1243,7 +1266,7 @@ main{
 	text-decoration:none;
 	color:#fff;
 }
-.programm-list-wrapper{
+.programm-wrapper .container{
 	background-image: url('/images/progaramm-opacity.png');
 }
 
@@ -1380,6 +1403,29 @@ main{
     margin-top: 35px;
 }
 /**end component dop-services-list**/
+
+/**start component interesting list on interesing page**/
+.inters-data {
+    color: #db0082;
+    font-size: 2em;
+}
+.inters-name > a {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.inters-name {
+    height: 50px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.inters-text {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+/**end component interesting list on interesting page**/
 
 @media (max-width: 2040px) {
 	.order-wrapper{
