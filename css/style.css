@@ -1249,6 +1249,138 @@ main{
 
 /**end component programm-list on main page**/
 
+/**start component dop-services-list on main page**/
+.dop-services-wrapper{
+	background-image: url('/images/dop-services-left-top-bg.jpg'),url('/images/dop-services-right-bottom-bg.jpg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: left top, right bottom;
+}
+.dop-services-wrapper h3 {
+    font-family: Roboto Slab;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.service-header h2 {
+    color: #48bac7;
+    font-family: Roboto Slab;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+.dop-services-wrapper{
+}
+.dop-services-wrapper .row {
+    width: 100%;
+}
+.dop-services-list-wrapper{
+	text-align:center;
+}
+.dop-services-button-wrapper{
+	margin:0px;
+	padding:0px;
+}
+.dop-services-button-wrapper li{
+	display:inline-block;
+}
+.dop-services-list-cell img{
+	width:100%;
+	border-radius: 18px;
+}
+.dop-services-list-cell{
+	margin-bottom:40px;
+}
+.dop-services-wrapper{
+	text-align:center;
+	background-color: #ecfdff;
+}
+.dop-services-list-name {
+	color: #000;
+	display: inline-block;
+    font-size: 1.2em;
+    height: 44px;
+    line-height: 1em;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.dop-services-list-cell {
+    height: 280px;
+}
+.dop-services-detail a{
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #12c3d7), color-stop(1, #0190a6) );
+	background:-moz-linear-gradient( center top, #12c3d7 5%, #0190a6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#12c3d7', endColorstr='#0190a6');
+	background-color:#12c3d7;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:400;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+    padding-left: 15px;
+    padding-right: 15px;
+	border-radius: 25px 0 0 25px;
+	position:relative;
+	left:2px;
+}
+.dop-services-detail a:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0190a6), color-stop(1, #12c3d7) );
+	background:-moz-linear-gradient( center top, #0190a6 5%, #12c3d7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0190a6', endColorstr='#12c3d7');
+	background-color:#0190a6;
+	text-decoration:none;
+	color:#fff;
+}
+.dop-services-send a{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ba1c7d), color-stop(1, #9d1a6d) );
+	background:-moz-linear-gradient( center top, #ba1c7d 5%, #9d1a6d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ba1c7d', endColorstr='#9d1a6d');
+	background-color:#ba1c7d;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:400;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	text-decoration:none;
+	text-align:center;
+	border-radius: 0 25px 25px 0px;
+	left: -2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.dop-services-send a:hover{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9d1a6d), color-stop(1, #ba1c7d) );
+	background:-moz-linear-gradient( center top, #9d1a6d 5%, #ba1c7d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9d1a6d', endColorstr='#ba1c7d');
+	background-color:#9d1a6d;
+	background-color:#0190a6;
+	text-decoration:none;
+	color:#fff;
+}
+.dop-services-list-wrapper{
+	
+}
+.dop-services-wrapper h2 {
+    color: #9f1a6e;
+    margin-top: 35px;
+}
+/**end component dop-services-list**/
+
 @media (max-width: 2040px) {
 	.order-wrapper{
 		background-image:url('/images/bg-clawn-normal.jpg'),url('/images/bg-baloon-normal.jpg'), url('/images/order-bg.png');
@@ -1260,6 +1392,12 @@ main{
 	    background-position: left bottom,right bottom;
 	    background-repeat: no-repeat,no-repeat;
 	    background-size: auto, auto;
+	}
+	.dop-services-wrapper{
+		background-image: url('/images/dop-services-left-top-bg-n.jpg'),url('/images/dop-services-right-bottom-bg-n.jpg');
+		background-repeat: no-repeat, no-repeat;
+		background-position: left top, right bottom;
+		background-size: auto, auto;
 	}
 }
 @media (max-width: 1785px) {
@@ -1309,6 +1447,12 @@ main{
 	}
 }
 @media (max-width: 1200px) {
+	.dop-services-wrapper{
+		background-image: url('/images/dop-services-left-top-bg-s.jpg'),url('/images/dop-services-right-bottom-bg-s.jpg');
+		background-repeat: no-repeat, no-repeat;
+		background-position: left top, right bottom;
+		background-size: auto, auto;
+	}
 	.programm-wrapper{
 		background-image: url("/images/programm-left-person-m.jpg"),url("/images/programm-right-person-s.jpg");
 	    background-position: left bottom,right bottom;
@@ -1331,7 +1475,7 @@ main{
 	.log-right-wrapper {
 		padding-left: 25px;
 	}
-	.order-detail a, .order-send a, .programm-detail a, .programm-send a{
+	.order-detail a, .order-send a, .programm-detail a, .programm-send a, .dop-services-detail a, .dop-services-send a{
 		font-size:14px;
 		padding-left:10px;
 		padding-right:10px;
@@ -1340,7 +1484,8 @@ main{
 }
 
 @media(max-width: 991px){
-	.programm-wrapper{
+	.programm-wrapper,	.dop-services-wrapper{
+		
 		background-image: none;
 	}
 	.bread-crumbs-wrapper, .bread-crumbs-wrapper ul{
@@ -1688,7 +1833,7 @@ main{
 	.log-wrapper img {
 		width: 100%;
 	}
-	.order-detail a, .order-send a, .prgoramm-detail a, .programm-send a{
+	.order-detail a, .order-send a, .prgoramm-detail a, .programm-send a, .dop-services-detail a, .dop-services-send{
 		font-size:12px;
 		padding-left:2px;
 		padding-right:2px;
@@ -1739,7 +1884,7 @@ main{
     width: 100%;
     float: left;
   }
-  .order-list-cell img, .programm-list-cell {
+  .order-list-cell img, .programm-list-cell img, .dop-services-list-cell img {
 	width:100%;
   }
 }
