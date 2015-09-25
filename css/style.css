@@ -1482,8 +1482,8 @@ main{
 .question-h, .faq-answer-h{
 	color: #0294a9;
 }
-.faq-question, .faq-answer-text{
-
+.faq-question, .faq-answer-text {
+    font-size: 1.2em;
 }
 .faq-answer-text{
 	font-weight: 300;
@@ -1639,6 +1639,14 @@ main{
 }
 
 @media(max-width: 991px){
+	.div-table-cell, .div-table-row, .div-table{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.faq-list-content > img {
+	    float: none;
+	}
 	footer, .push {
 		height: auto;
 	}
