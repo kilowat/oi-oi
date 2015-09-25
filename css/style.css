@@ -5,6 +5,20 @@ body{
 a{
 	color:#0294a9;
 }
+
+html, body {
+	height: 100%;
+}
+main {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+footer, .push {
+	height: 4em;
+}
+
 .text-center{
 	text-align:center;
 }
@@ -1139,6 +1153,26 @@ footer .row {
 .inters-cell{
 	margin-bottom: 50px;
 }
+.inters-data {
+    color: #db0082;
+    font-size: 2em;
+}
+.inters-name > a {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.inters-name {
+    height: 50px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.inters-text {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+}
 /**end component interesting list on interesting page**/
 
 /**start component programm-list on main page**/
@@ -1404,28 +1438,29 @@ main{
 }
 /**end component dop-services-list**/
 
-/**start component interesting list on interesing page**/
-.inters-data {
-    color: #db0082;
-    font-size: 2em;
+/**start component faq-list**/
+.div-table-cell{
+	display: table-cell;
 }
-.inters-name > a {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-decoration: underline;
+.div-table-row{
+	display: table-row;
 }
-.inters-name {
-    height: 50px;
-    margin-bottom: 15px;
-    overflow: hidden;
+.div-table{
+	display: table;
 }
-.inters-text {
-    color: #000;
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.4em;
+.faq-list-content > img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
 }
-/**end component interesting list on interesting page**/
+.faq-text {
+    font-family: Roboto Slab;
+    font-size: 1.5em;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+}
+/**end component faq-list**/
 
 @media (max-width: 2040px) {
 	.order-wrapper{
@@ -1530,6 +1565,9 @@ main{
 }
 
 @media(max-width: 991px){
+	footer, .push {
+		height: auto;
+	}
 	.programm-wrapper,	.dop-services-wrapper{
 		
 		background-image: none;
@@ -1910,6 +1948,10 @@ main{
 	}
 	.phone-number{
 		display:none;
+	}
+	.inters-content .inters-text, .review-counte , .inters-content img, .review-see-detail{
+		float: none;
+		width: 100%;
 	}
 }
  @media (max-width: 400px) {
