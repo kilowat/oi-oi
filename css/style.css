@@ -1,3 +1,7 @@
+.log-wrapper > a {
+    display: inline-block;
+    height: 69px;
+}
 canvas{
 	left: 0;
     position: absolute;

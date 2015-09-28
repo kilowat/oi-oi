@@ -681,8 +681,9 @@
 	</footer>
  <script>
  $(document).ready(function(){ 
-	$('.log-wrapper a').click(function(event){
-
+	$('.log-wrapper a').mouseover(function(event){
+		if(!event.ctrlKey)
+			return false;
 		window.requestAnimFrame = (function(callback) {
 	        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
 	        function(callback) {
@@ -696,11 +697,16 @@
 		var x = 166;
 		var y = 19;
 		var counter = 0;
-		var increase = Math.PI/20;
-
+		var increase = Math.PI/15;
+		var from = 0; // Начальная координата X
+		var to = 100; // Конечная координата X
+		var duration = 1000; // Длительность - 1 секунда
+		var start = new Date().getTime(); // Время старта
+		var progress=0;
+		var now;
 		canvas.width = 300;
 		canvas.height = 117;
-
+		
 		var context = canvas.getContext('2d');
 	    var imageObj = new Image();
 
@@ -715,24 +721,36 @@
 					setTimeout(function() {
 					requestAnimationFrame(animate);
 						move();
+						if(progress>1)
+							return false;
 						context.clearRect(0, 0, canvas.width, canvas.height);
 						context.drawImage(imageObj, x, y);
 
 					}, 1000 / fps);
 				}
-		  };
-
+		  };	  
+		  
 		  function move(){
-		  	if(y>4){
-			  	counter += increase;
-				y = Math.sin(counter)*40;
+			
+			if(progress>1)
+				return false;
+		  		now = (new Date().getTime()) - start; // Текущее время
+				progress = now / duration; // Прогресс анимаци
+				y= (to - from) * delta(progress) + from;
+			if(x>=0){
+				x-=8;
 			}
-			if(x>=0)
-				x-=10;
+
 		  }
-
-
-
+		  function delta(progress) {
+			 function d(progress) {
+				for(var a = 0, b = 1, result; 1; a += b, b /= 2) {
+				   if (progress >= (7 - 4 * a) / 11)
+					   return -Math.pow((11 - 6 * a - 11 * progress) / 4, 2) + Math.pow(b, 2);
+				}
+			 }
+			 return 1 - d(1 - progress);
+	}
 	})
 });
  </script>
