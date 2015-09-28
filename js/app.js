@@ -33,4 +33,5 @@ window.onresize = function(){
 $(document).ready(function(){
 	oi_oi().sliderResize();
 	oi_oi().miniSliderResize();
+
 });

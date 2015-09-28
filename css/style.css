@@ -1,3 +1,9 @@
+canvas{
+	left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
 body{
 	font-family: 'Roboto', sans-serif;
 	color:#212121;
@@ -1105,6 +1111,7 @@ footer .row {
 /**end component photo-list on photos page**/
 
 /**start component interestin list on interesting page**/
+
 .inters-content::after, .inters-bottom-section:after {
     clear: both;
     content: "";
