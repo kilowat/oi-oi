@@ -83,7 +83,7 @@
 		</div>
 	</header>
 	<main>
-	<canvas id="canvas" width="300" height="63">
+	
 	</canvas>
 	<!--start component main-slider-->
 		<div class="container-fluid slider-container">
@@ -680,28 +680,60 @@
 		</div>	
 	</footer>
  <script>
- $(document).ready(function(){
-	      
-	  var context = canvas.getContext('2d');
-      var imageObj = new Image();
-
-      imageObj.onload = function() {
-  
-		context.drawImage(imageObj, 214, 0);
-		    
-	  };
-      imageObj.src = '/images/ball.png';
-
+ $(document).ready(function(){ 
 	$('.log-wrapper a').click(function(event){
-		event.preventDefault();
-		var canvas = document.getElementById('canvas');
 
+		window.requestAnimFrame = (function(callback) {
+	        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+	        function(callback) {
+	          window.setTimeout(callback, 1000 / 60);
+	        };
+	      })();
+
+		event.preventDefault();
+
+		var canvas = document.createElement('canvas');
+		var x = 166;
+		var y = 19;
+		var counter = 0;
+		var increase = Math.PI/20;
+
+		canvas.width = 300;
+		canvas.height = 117;
+
+		var context = canvas.getContext('2d');
+	    var imageObj = new Image();
+
+      	imageObj.src = '/images/ball.png';
+      	$('.top-wrapper').append(canvas);
 		$('.log-wrapper a img').replaceWith('<img class="logo" src="/images/logo-2.png">');
 
-	})
-	
-	
+	      imageObj.onload = function() {
+			animate();
+			var fps = 50;
+				function animate() {
+					setTimeout(function() {
+					requestAnimationFrame(animate);
+						move();
+						context.clearRect(0, 0, canvas.width, canvas.height);
+						context.drawImage(imageObj, x, y);
 
+					}, 1000 / fps);
+				}
+		  };
+
+		  function move(){
+		  	if(y>4){
+			  	counter += increase;
+				y = Math.sin(counter)*40;
+			}
+			if(x>=0)
+				x-=10;
+		  }
+
+
+
+	})
 });
  </script>
   </body>
